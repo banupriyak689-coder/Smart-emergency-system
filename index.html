@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Emergency Patient Prioritization System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🏥 Smart Emergency Patient Prioritization System</h1>
+        <p>Patient Management Using Priority Queue and Max-Heap</p>
+    </header>
+
+    <div class="container">
+
+        <div class="form-box">
+            <h2>Register Patient</h2>
+
+            <form id="patientForm">
+                <label>Patient ID</label>
+                <input type="text" id="patientId"
+                       placeholder="Enter Patient ID" required>
+
+                <label>Patient Name</label>
+                <input type="text" id="patientName"
+                       placeholder="Enter Patient Name" required>
+
+                <label>Urgency Level</label>
+                <select id="urgency">
+                    <option value="Critical">Critical</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+
+                <button type="submit">Register Patient</button>
+            </form>
+
+            <p id="message"></p>
+        </div>
+
+        <div class="list-box">
+            <h2>Patient Priority Queue</h2>
+
+            <div class="buttons">
+                <button id="nextPatient">Next Patient</button>
+                <button id="clearAll">Clear All</button>
+            </div>
+
+            <div id="nextMessage"></div>
+
+            <div id="patientList">
+                <p>No patients registered.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Mini Project | Priority Queue | Max-Heap</p>
+        <p>Educational demo only — not for real medical triage.</p>
+    </footer>
+
+    <script src="PatientPriorityQueue.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
